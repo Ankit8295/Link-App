@@ -1,0 +1,46 @@
+#headerUser-1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-inline: 0.5em;
+  padding-block: 0.25em;
+}
+#headerUser-1 .user-profile {
+  flex: 1;
+}
+#headerUser-1 .user-nav {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2em;
+}
+#headerUser-1 img {
+  cursor: pointer;
+}
+
+#search-user-friends {
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-inline: 1em;
+  padding-block: 0.25em;
+}
+#search-user-friends .user-search-input {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  background-color: var(--main-color);
+}
+
+.user-search-input input {
+  padding-inline: 1em;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: var(--main-color);
+}

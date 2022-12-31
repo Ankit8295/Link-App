@@ -1,0 +1,29 @@
+#chats {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding-block: 1em;
+  padding-inline: 0.5em;
+  overflow-y: scroll;
+}
+#chats::-webkit-scrollbar {
+  display: none;
+}
+
+#chats .chat {
+  border-radius: 0.5em;
+  padding-inline: 0.5em;
+  padding-block: 0.25em;
+  width: 100%;
+  display: flex;
+  gap: 1em;
+  background-color: var(--white);
+}
+
+#chats .chat-content {
+  display: flex;
+  flex-direction: column;
+}
