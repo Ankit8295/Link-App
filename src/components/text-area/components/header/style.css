@@ -1,0 +1,58 @@
+#textArea {
+  width: 100%;
+  height: 7.5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1em;
+  padding-block: 0.5em;
+  position: relative;
+}
+
+#textArea .user-friend {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+#textArea .textarea-options {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+#textArea label {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  align-items: center;
+}
+label input {
+  padding-inline: 0.5em;
+  padding-block: 0.5em;
+  background-color: var(--white);
+  outline: none;
+  border: none;
+  font-weight: 500;
+  border-radius: 0.25em;
+  animation: 0.3s ease-out searchbar;
+}
+#textArea img {
+  cursor: pointer;
+}
+.user-friend p {
+  color: var(--white);
+}
+.textarea-options img {
+  filter: invert(100%);
+}
+
+@keyframes searchbar {
+  0% {
+    opacity: 0.5;
+    transform: translateX(3%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}

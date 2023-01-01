@@ -1,12 +1,10 @@
 #chats {
   width: 100%;
-  height: 80vh;
+  height: 86vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1em;
-  padding-block: 1em;
-  padding-inline: 0.5em;
+  padding-block: 0.5em;
   overflow-y: scroll;
 }
 #chats::-webkit-scrollbar {
@@ -14,15 +12,33 @@
 }
 
 #chats .chat {
-  border-radius: 0.5em;
-  padding-inline: 0.5em;
-  padding-block: 0.25em;
+  padding-inline: 1em;
+  padding-block: 0.5em;
   width: 100%;
   display: flex;
   gap: 1em;
-  background-color: var(--white);
+  color: var(--white);
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+#chats h4 {
+  font-weight: 600;
+}
+.user-img {
+  width: 2.5em;
+  height: 2.5em;
+}
+.user-img img {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
 }
 
+#chats .chat:hover {
+  color: var(--main-color);
+  background-color: var(--hover-color);
+}
 #chats .chat-content {
   display: flex;
   flex-direction: column;

@@ -17,7 +17,9 @@ body {
 }
 
 #root {
-  --main-color: #efe7ed;
-  --white: #fff;
-  --black: #000;
+  --main-color: #19181a;
+  --hover-color: #ececec;
+  --white: #f9f6ed;
+  --black: #19181a;
+  --touch: #1a5db4;
 }

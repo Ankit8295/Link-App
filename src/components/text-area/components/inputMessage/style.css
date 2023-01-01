@@ -1,0 +1,26 @@
+#Input-msg {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-inline: 1em;
+  padding-block: 0.5em;
+  height: 7.5vh;
+}
+
+#Input-msg input {
+  width: 90%;
+  height: 100%;
+  padding-inline: 0.5em;
+  border-radius: 0.25em;
+  font-size: 1.25em;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  background-color: var(--white);
+}
+
+#Input-msg img {
+  filter: invert(1);
+  cursor: pointer;
+}
