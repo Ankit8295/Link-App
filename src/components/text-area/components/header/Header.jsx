@@ -37,15 +37,22 @@ export default function Header() {
       </div>
       <div className="textarea-options">
         <label>
-          {showChatSearch && <input type="search" />}
+          {showChatSearch && <input type="search" placeholder="search chat" />}
           <img
+            id="svg"
             className="chat-search-bar"
             onClick={showSearch}
             src={search}
             alt=""
           />
         </label>
-        <img className="menu-user" onClick={showUserMenuFn} src={menu} alt="" />
+        <img
+          id="svg"
+          className="menu-user"
+          onClick={showUserMenuFn}
+          src={menu}
+          alt=""
+        />
       </div>
       {UserMenu && <DropDown menu={options} />}
     </div>

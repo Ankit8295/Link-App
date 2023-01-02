@@ -1,0 +1,15 @@
+#friends-list {
+  width: 100%;
+  height: 86vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 0.5em;
+  overflow-y: auto;
+  color: var(--white);
+  background-color: var(--extra);
+  animation: 0.3s ease-in slideRight;
+}
+#chats::-webkit-scrollbar {
+  display: none;
+}
