@@ -8,6 +8,9 @@ const userSlice = createSlice({
     showProfileFn: (state) => {
       state.showProfile = !state.showProfile;
     },
+    showFriendProfileFn: (state) => {
+      state.showFriendProfile = !state.showFriendProfile;
+    },
     showFriendsListFn: (state) => {
       state.showFriends = !state.showFriends;
     },
@@ -17,7 +20,11 @@ const userSlice = createSlice({
   },
 });
 
-export const { showFriendsListFn, showProfileFn, showUserMenuFn } =
-  userSlice.actions;
+export const {
+  showFriendProfileFn,
+  showFriendsListFn,
+  showProfileFn,
+  showUserMenuFn,
+} = userSlice.actions;
 
 export default userSlice.reducer;

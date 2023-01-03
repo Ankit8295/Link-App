@@ -3,9 +3,14 @@ import user from "assets/media/svg/user.jpg";
 import search from "assets/media/svg/search.svg";
 import menu from "assets/media/svg/menu.svg";
 import React, { useState } from "react";
-import DropDown from "common/dropdown/DropDown";
+import { showFriendProfileFn } from "store/user-slice/userSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function Header() {
+  const dispatch = useDispatch();
+  const showFriendProfile = useSelector(
+    (state) => state.user.showFriendProfile
+  );
   const [showChatSearch, setShowChatSearch] = useState(false);
   const [UserMenu, setUserMenu] = useState(false);
   const showSearch = () => {
@@ -20,18 +25,15 @@ export default function Header() {
     }
     return;
   };
-  const options = [
-    "User info",
-    "Clear Chat",
-    "Report & Block",
-    "Remove Friend",
-  ];
-
+  const friendProfileHandler = (e) => {
+    e.preventDefault();
+    dispatch(showFriendProfileFn());
+  };
   return (
     <div id="textArea">
       <div className="user-friend">
         <div className="user-img">
-          <img src={user} alt="" />
+          <img onClick={friendProfileHandler} src={user} alt="" />
         </div>
         <p>Ankit verma</p>
       </div>
@@ -54,7 +56,16 @@ export default function Header() {
           alt=""
         />
       </div>
-      {UserMenu && <DropDown menu={options} />}
+      {UserMenu && (
+        <div id="dropdown">
+          <a onClick={friendProfileHandler} href="/">
+            User info
+          </a>
+          <a href="/">Clear Chat</a>
+          <a href="/">Report & Block</a>
+          <a href="/">Remove Friend</a>
+        </div>
+      )}
     </div>
   );
 }

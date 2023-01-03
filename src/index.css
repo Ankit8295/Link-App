@@ -22,11 +22,22 @@ body {
   --white: #f9f6ed;
   --black: #19181a;
   --touch: #1a5db4;
-  --extra: #4f4f4f;
+  --extra: #313131;
 }
 
 #svg {
   width: 1.75em;
   object-fit: contain;
   height: 1.75em;
+}
+
+@media only screen and (min-width: 1920px) {
+  html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body {
+    width: 1920px;
+  }
 }

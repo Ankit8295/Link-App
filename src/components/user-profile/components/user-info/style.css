@@ -9,17 +9,17 @@
   gap: 3em;
   position: relative;
   background-color: var(--extra);
-  animation: 0.3s ease-in slideRight;
+  animation: 0.2s ease-in slideRight;
 }
-#profile img {
+#profile img,
+.friend-2 {
   border-radius: 50%;
   width: 10em;
   object-fit: cover;
   cursor: pointer;
 }
 #profile .go-back {
-  width: 2.5em;
-  height: 2em;
+  width: 1.75em;
   object-fit: cover;
   position: absolute;
   top: 1.5%;
@@ -33,6 +33,7 @@
   align-items: flex-start;
 }
 #profile h2 {
+  font-size: 1.25em;
   color: var(--white);
 }
 .user-info {
@@ -47,7 +48,7 @@
 .user-info #input {
   animation: none;
   width: 100%;
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: 500;
 }
 .user-info label {

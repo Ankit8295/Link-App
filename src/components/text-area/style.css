@@ -3,7 +3,25 @@
   height: 100vh;
   background-color: var(--main-color);
   display: flex;
-  justify-content: flex-start;
+}
+
+#TextArea .main {
+  flex: 2;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+#TextArea .friend {
+  flex: 1;
+  animation: 0.2s ease-out slideIn;
+}
+
+@keyframes slideIn {
+  from {
+    flex: 0;
+  }
+  to {
+    flex: 1;
+  }
 }

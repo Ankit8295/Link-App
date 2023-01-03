@@ -5,16 +5,15 @@ import sun from "assets/media/svg/sun.svg";
 import user from "assets/media/svg/user.jpg";
 import menu from "assets/media/svg/menu.svg";
 import search from "assets/media/svg/search.svg";
-import DropDown from "common/dropdown/DropDown";
 import { useDispatch, useSelector } from "react-redux";
 import {
   showProfileFn,
   showUserMenuFn,
   showFriendsListFn,
 } from "store/user-slice/userSlice";
+
 export default function HeaderUser1() {
   const dispatch = useDispatch();
-  const options = useSelector((state) => state.user.userMenu);
   const showUserMenu = useSelector((state) => state.user.showUserMenu);
 
   const showMenuHandler = () => {
@@ -23,8 +22,12 @@ export default function HeaderUser1() {
   const friendListHandler = () => {
     dispatch(showFriendsListFn());
   };
-  const showUserProfile = () => {
+  const showUserProfile = (e) => {
+    e.preventDefault();
     dispatch(showProfileFn());
+    if (showUserMenu) {
+      dispatch(showUserMenuFn());
+    }
   };
 
   return (
@@ -48,7 +51,16 @@ export default function HeaderUser1() {
             />
           </div>
           <div className="profile-menu">
-            {showUserMenu && <DropDown menu={options} />}
+            {showUserMenu && (
+              <div id="dropdown">
+                <a onClick={showUserProfile} href="/">
+                  Your Profile
+                </a>
+                <a href="/">Add Friends</a>
+                <a href="/">Settings</a>
+                <a href="/">Log Out</a>
+              </div>
+            )}
             <img
               id="svg"
               className="menu-btn"

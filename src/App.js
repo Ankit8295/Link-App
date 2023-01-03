@@ -1,3 +1,4 @@
+import SecondUser from "components/second-user-profile/SecondUser";
 import React from "react";
 import "./App.css";
 import TextArea from "./components/text-area/TextArea";

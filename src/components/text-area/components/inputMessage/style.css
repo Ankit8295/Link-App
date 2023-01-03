@@ -3,9 +3,10 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-inline: 1em;
+  padding-inline: 0.5em;
   padding-block: 0.5em;
   height: 7.5vh;
+  gap: 0.25em;
 }
 
 #Input-msg input {

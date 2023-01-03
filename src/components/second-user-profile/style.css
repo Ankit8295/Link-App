@@ -1,4 +1,21 @@
 #user-2 {
   height: 100%;
-  background-color: black;
+  width: 100%;
+  position: relative;
+  background-color: var(--extra);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-block: 25%;
+  gap: 3em;
+}
+
+#user-2 .close-friend-profile {
+  object-fit: cover;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+
+  filter: invert(1);
+  cursor: pointer;
 }

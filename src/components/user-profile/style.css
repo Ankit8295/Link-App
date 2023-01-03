@@ -4,3 +4,42 @@
   background-color: var(--main-color);
   border-right: 1px solid var(--main-color);
 }
+#dropdown {
+  background-color: var(--white);
+  position: absolute;
+  z-index: 1000;
+  right: 0;
+  top: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 10em;
+  padding-block: 0.5em;
+  border-radius: 0.25em;
+  animation: 0.2s ease-out dropdown;
+}
+
+#dropdown a {
+  border-radius: 0.25em;
+  padding-block: 0.5em;
+  padding-inline: 1em;
+  width: 100%;
+  text-decoration: none;
+  color: var(--main-color);
+}
+#dropdown a:hover {
+  background-color: var(--hover-color);
+}
+
+@keyframes dropdown {
+  from {
+    opacity: 0.5;
+
+    transform: translateY(-5%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}

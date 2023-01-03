@@ -8,7 +8,7 @@
   overflow-y: auto;
   color: var(--white);
   background-color: var(--extra);
-  animation: 0.3s ease-in slideRight;
+  animation: 0.2s ease-in slideRight;
 }
 #chats::-webkit-scrollbar {
   display: none;
