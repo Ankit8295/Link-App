@@ -4,13 +4,11 @@ import search from "assets/media/svg/search.svg";
 import menu from "assets/media/svg/menu.svg";
 import React, { useState } from "react";
 import { showFriendProfileFn } from "store/user-slice/userSlice";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
 export default function Header() {
   const dispatch = useDispatch();
-  const showFriendProfile = useSelector(
-    (state) => state.user.showFriendProfile
-  );
+
   const [showChatSearch, setShowChatSearch] = useState(false);
   const [UserMenu, setUserMenu] = useState(false);
   const showSearch = () => {
