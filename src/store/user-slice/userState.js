@@ -3,4 +3,5 @@ export const userState = {
   showFriends: false,
   showUserMenu: false,
   showFriendProfile: false,
+  darkMode: false,
 };

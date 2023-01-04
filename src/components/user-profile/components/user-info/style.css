@@ -9,10 +9,9 @@
   gap: 3em;
   position: relative;
   background-color: var(--extra);
-  animation: 0.2s ease-in slideRight;
+  animation: slideRight 0.3s ease-out 0s both;
 }
-#profile img,
-.friend-2 {
+#profile img {
   border-radius: 50%;
   width: 10em;
   object-fit: cover;
@@ -30,26 +29,35 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 1em;
   align-items: flex-start;
+  padding: 2em;
+  border: none;
 }
 #profile h2 {
+  font-weight: 600;
   font-size: 1.25em;
-  color: var(--white);
+  color: var(--black);
 }
 .user-info {
+  border-radius: 0.5em;
   width: 100%;
   padding-inline: 2em;
   padding-block: 1em;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  background-color: var(--white);
   gap: 0.5em;
 }
 .user-info #input {
   animation: none;
   width: 100%;
   font-size: 1em;
+  border-radius: 0.5em;
+  padding: 0.5em;
   font-weight: 500;
+  background-color: var(--hover-color);
 }
 .user-info label {
   width: 100%;
@@ -60,9 +68,9 @@
 
 @keyframes slideRight {
   from {
-    transform: translateX(-100%);
+    width: 0%;
   }
   to {
-    transform: translateX(0%);
+    width: 100%;
   }
 }

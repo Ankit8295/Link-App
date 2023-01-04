@@ -1,10 +1,10 @@
 #chats {
   width: 100%;
-  height: 86vh;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-block: 0.5em;
+  padding-block: 1em;
   overflow-y: scroll;
 }
 #chats::-webkit-scrollbar {
@@ -21,9 +21,7 @@
   background-color: var(--main-color);
   cursor: pointer;
 }
-#chats h4 {
-  font-weight: 600;
-}
+
 .user-img {
   width: 2.5em;
   height: 2.5em;

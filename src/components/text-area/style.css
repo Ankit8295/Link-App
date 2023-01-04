@@ -14,14 +14,14 @@
 
 #TextArea .friend {
   flex: 1;
-  animation: 0.2s ease-out slideIn;
+  animation: slideIn 0.3s ease-out 0s both;
 }
 
 @keyframes slideIn {
-  from {
+  0% {
     flex: 0;
   }
-  to {
+  100% {
     flex: 1;
   }
 }

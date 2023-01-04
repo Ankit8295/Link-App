@@ -7,15 +7,54 @@
   align-items: center;
   flex-direction: column;
   padding-block: 25%;
-  gap: 3em;
+  gap: 4em;
+  animation: showslide 0.3s ease-in-out 0.1s both;
 }
-
+#user-2 h2 {
+  text-align: center;
+  color: var(--white);
+}
 #user-2 .close-friend-profile {
   object-fit: cover;
   position: absolute;
   top: 1em;
   right: 1em;
-
   filter: invert(1);
   cursor: pointer;
+}
+.friend-img {
+  border-radius: 50%;
+  width: 10em;
+  object-fit: cover;
+  cursor: pointer;
+}
+#user-2 > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+#user-2 button {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.75em 1.5em;
+}
+#user-2 button:hover {
+  text-decoration: underline;
+  background-color: var(--hover-color);
+}
+
+@keyframes showslide {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

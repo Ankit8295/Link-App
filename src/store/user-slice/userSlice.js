@@ -14,13 +14,17 @@ const userSlice = createSlice({
     showFriendsListFn: (state) => {
       state.showFriends = !state.showFriends;
     },
-    showUserMenuFn: (state, action) => {
+    showUserMenuFn: (state) => {
       state.showUserMenu = !state.showUserMenu;
+    },
+    darkModeFn: (state) => {
+      state.darkMode = !state.darkMode;
     },
   },
 });
 
 export const {
+  darkModeFn,
   showFriendProfileFn,
   showFriendsListFn,
   showProfileFn,

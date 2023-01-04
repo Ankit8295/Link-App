@@ -17,21 +17,16 @@ export default function SecondUser() {
         src={close}
         alt=""
       />
+      <div>
+        <img className="friend-img" src={user} alt="" />
+        <h2>Ijrdo Developer</h2>
+        <h2>This is about</h2>
+      </div>
 
-      <img className="friend-2" src={user} alt="" />
-      <div className="profile-details">
-        <div className="user-info name">
-          <h2>Your Name</h2>
-          <label>
-            <input value="Ankit" id="input" type="text" />
-          </label>
-        </div>
-        <div className="user-info about">
-          <h2>About</h2>
-          <label>
-            <input value="nothing" id="input" type="text" />
-          </label>
-        </div>
+      <div>
+        <button>Clear Chat</button>
+        <button>Block & Report</button>
+        <button>Remove Friend</button>
       </div>
     </div>
   );

@@ -15,14 +15,23 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+p {
+  font-weight: 300;
+}
 
-#root {
-  --main-color: #19181a;
-  --hover-color: #ececec;
+#App {
+  --main-color: #072ac8;
+  --hover-color: #d9d9d9;
   --white: #f9f6ed;
   --black: #19181a;
-  --touch: #1a5db4;
-  --extra: #313131;
+  --extra: #072ac8;
+}
+#App-dark {
+  --main-color: #161616;
+  --hover-color: #d9d9d9;
+  --white: #d2d2d2;
+  --black: #000000;
+  --extra: #000000;
 }
 
 #svg {
