@@ -1,13 +1,13 @@
-#App,
-#App-dark {
+#main,
+#main-dark {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
 .theme {
   background-color: var(--main-color);
-
-  transition: background-color 0.5s ease;
+  transition: background-color 0.3s ease;
 }
