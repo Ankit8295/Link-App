@@ -3,7 +3,7 @@ import React from "react";
 import user from "assets/media/svg/user.jpg";
 export default function Chats() {
   return (
-    <div id="chats">
+    <div id="chats" className="theme">
       <div className="chat">
         <div className="user-img">
           <img src={user} alt="" />

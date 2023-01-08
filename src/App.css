@@ -5,3 +5,9 @@
   justify-content: flex-start;
   height: 100vh;
 }
+
+.theme {
+  background-color: var(--main-color);
+
+  transition: background-color 0.5s ease;
+}

@@ -12,7 +12,7 @@ import {
   showUserMenuFn,
   showFriendsListFn,
   darkModeFn,
-} from "store/user-slice/userSlice";
+} from "store/slices/action/actions";
 
 export default function HeaderUser1() {
   const dispatch = useDispatch();
@@ -38,7 +38,7 @@ export default function HeaderUser1() {
 
   return (
     <>
-      <div id="headerUser-1">
+      <div id="headerUser-1" className="theme">
         <div className="user-profile">
           <div>
             <img onClick={showUserProfile} src={user} alt="user-icon" />
@@ -82,7 +82,7 @@ export default function HeaderUser1() {
         </div>
       </div>
       <div id="search-user-friends">
-        <label className="user-search-input">
+        <label className="user-search-input theme">
           <img src={search} alt="search-icon" />
           <input type="search" placeholder="search friends" />
         </label>

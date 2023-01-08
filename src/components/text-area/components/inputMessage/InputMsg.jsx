@@ -6,7 +6,7 @@ import sendFile from "assets/media/svg/sendFiles.svg";
 
 export default function InputMsg() {
   return (
-    <div id="Input-msg">
+    <div id="Input-msg" className="theme">
       <img id="svg" src={smiley} alt="" />
       <img id="svg" src={sendFile} alt="" />
       <input type="text" />

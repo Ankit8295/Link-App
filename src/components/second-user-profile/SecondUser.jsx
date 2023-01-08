@@ -3,14 +3,14 @@ import React from "react";
 import user from "assets/media/svg/user.jpg";
 import close from "assets/media/svg/close.svg";
 import { useDispatch } from "react-redux";
-import { showFriendProfileFn } from "store/user-slice/userSlice";
+import { showFriendProfileFn } from "store/slices/action/actions";
 export default function SecondUser() {
   const dispatch = useDispatch();
   const closeFriendProfile = () => {
     dispatch(showFriendProfileFn());
   };
   return (
-    <div id="user-2">
+    <div id="user-2" className="theme">
       <img
         onClick={closeFriendProfile}
         className="close-friend-profile"
@@ -20,7 +20,7 @@ export default function SecondUser() {
       <div>
         <img className="friend-img" src={user} alt="" />
         <h2>Ijrdo Developer</h2>
-        <h2>This is about</h2>
+        <h2>about</h2>
       </div>
 
       <div>

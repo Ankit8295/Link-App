@@ -7,7 +7,7 @@ import UserProfile from "./components/user-profile/UserProfile";
 function App() {
   const darkMode = useSelector((state) => state.user.darkMode);
   return (
-    <div id={darkMode ? "App-dark" : "App"}>
+    <div id={darkMode ? "App-dark" : "App"} className="theme">
       <UserProfile />
       <TextArea />
     </div>

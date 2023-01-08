@@ -3,7 +3,7 @@ import user from "assets/media/svg/user.jpg";
 import search from "assets/media/svg/search.svg";
 import menu from "assets/media/svg/menu.svg";
 import React, { useState } from "react";
-import { showFriendProfileFn } from "store/user-slice/userSlice";
+import { showFriendProfileFn } from "store/slices/action/actions";
 import { useDispatch } from "react-redux";
 
 export default function Header() {
@@ -28,7 +28,7 @@ export default function Header() {
     dispatch(showFriendProfileFn());
   };
   return (
-    <div id="textArea">
+    <div id="textArea" className="theme">
       <div className="user-friend">
         <div className="user-img">
           <img onClick={friendProfileHandler} src={user} alt="" />

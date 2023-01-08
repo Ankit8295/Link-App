@@ -9,7 +9,7 @@ export default function UserProfile() {
   const showProfile = useSelector((state) => state.user.showProfile);
   const showFriends = useSelector((state) => state.user.showFriends);
   return (
-    <div id="user-1">
+    <div id="user-1" className="theme">
       {showProfile ? (
         <UserInfo />
       ) : (

@@ -20,18 +20,18 @@ p {
 }
 
 #App {
-  --main-color: #072ac8;
+  --main-color: #0a2495;
   --hover-color: #d9d9d9;
   --white: #f9f6ed;
   --black: #19181a;
-  --extra: #072ac8;
+  --extra: #0a2495;
 }
 #App-dark {
   --main-color: #161616;
   --hover-color: #d9d9d9;
   --white: #d2d2d2;
-  --black: #000000;
-  --extra: #000000;
+  --black: #161616;
+  --extra: #161616;
 }
 
 #svg {
@@ -40,13 +40,13 @@ p {
   height: 1.75em;
 }
 
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 2100px) {
   html {
     display: flex;
     justify-content: center;
     align-items: center;
   }
   body {
-    width: 1920px;
+    width: 2400px;
   }
 }

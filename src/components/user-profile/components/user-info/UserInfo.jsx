@@ -3,7 +3,7 @@ import user from "assets/media/svg/user.jpg";
 import back from "assets/media/svg/back.svg";
 import React from "react";
 import { useDispatch } from "react-redux";
-import { showProfileFn } from "store/user-slice/userSlice";
+import { showProfileFn } from "store/slices/action/actions";
 export default function UserInfo() {
   const dispatch = useDispatch();
   const closeUserProfile = () => {
@@ -11,7 +11,7 @@ export default function UserInfo() {
   };
 
   return (
-    <div id="profile">
+    <div id="profile" className="theme">
       <img src={user} alt="" />
       <div className="profile-details">
         <div className="user-info name">
